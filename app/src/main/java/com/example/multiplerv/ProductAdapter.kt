@@ -38,6 +38,7 @@ class ProductAdapter(private val products: List<Product>) :
                 tvProductName.text = product.name
                 tvProductPrice.text = product.price.toString()
                 tvProductCount.text = product.count.toString()
+                imageView2.setImageResource(product.imageResId)
 
                 // Set favorite button state
                 updateFavoriteButtonState(product.isFavorite)
